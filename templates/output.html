@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+
+    <title>Sentiment Analysis</title>
+
+    <link
+      href="../static/vendor/bootstrap/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- yeh 2 fonts import kiye hai -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i"
+      rel="stylesheet"
+    />
+
+    <link href="../static/styles.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <!-- Yeh navbar hai -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+      <div class="container">
+        <a class="navbar-brand" href="/">Sentiment Analysis</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarResponsive"
+          aria-controls="navbarResponsive"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="/">Home</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Yeh hamara hero area hai -->
+    <header class="masthead text-center text-white">
+      <div class="masthead-content">
+        <div class="container">
+          <h1 class="masthead-heading mb-0">{{ analysis}}</h1>
+          <h2 style="color: #8b0000;">Negative % = {{ negative}}</h2>
+          <h2 style="color: darkgrey;">Neutral % = {{ neutral}}</h2>
+          <h2 style="color: greenyellow;">Positive % = {{ positive}}</h2>
+
+          <!-- <input class="blob-input" type="tel" /> -->
+        </div>
+      </div>
+      <div class="bg-circle-1 bg-circle"></div>
+      <div class="bg-circle-2 bg-circle"></div>
+      <div class="bg-circle-3 bg-circle"></div>
+      <div class="bg-circle-4 bg-circle"></div>
+    </header>
+
+    <footer class="py-5 bg-black">
+      <div class="container">
+        <p class="m-0 text-center text-white small">
+          Copyright &copy; Sentiment Analysis 2020
+        </p>
+      </div>
+    </footer>
+
+    <!-- Yahan jqery aur bootstrap ki js import ki hai -->
+    <script src="../static/vendor/jquery/jquery.min.js"></script>
+    <script src="../static/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
